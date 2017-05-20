@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:8080/#/6/10 -->
+<html slick-uniqueid="3" class=" js no-mobile desktop no-ie chrome chrome58 root-section w-1234 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded" id="index-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>A-Frame Presentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Slides about A-Frame, a web framework for building virtual reality experiences with HTML.">
+    <link rel="shortcut icon" href="http://127.0.0.1:8080/media/img/favicon.png">
+    <link rel="stylesheet" href="./A-Frame Presentation_files/font.css">
+    <link rel="stylesheet" href="./A-Frame Presentation_files/font(1).css">
+    <link rel="stylesheet" href="./A-Frame Presentation_files/reveal.css">
+    <link rel="stylesheet" href="./A-Frame Presentation_files/highlight.css">
+    <script src="./A-Frame Presentation_files/print-and-pdf-export.js"></script><link rel="stylesheet" type="text/css" href="./A-Frame Presentation_files/paper.css">
+    <link rel="stylesheet" href="./A-Frame Presentation_files/main.css">
+    <script src="./A-Frame Presentation_files/aframe.min.js"></script><style type="text/css" data-href="src/style/aframe.css">.a-html{bottom:0;left:0;position:fixed;right:0;top:0}.a-body{height:100%;margin:0;overflow:hidden;padding:0;width:100%}:-webkit-full-screen{background-color:transparent}.a-hidden{display:none!important}.a-canvas{height:100%;left:0;position:absolute;top:0;width:100%}.a-canvas.a-grab-cursor:hover{cursor:grab;cursor:-moz-grabbing;cursor:-webkit-grab}.a-canvas.a-grab-cursor:active,.a-grabbing{cursor:grabbing;cursor:-moz-grabbing;cursor:-webkit-grabbing}// Class is removed when doing <a-scene embedded>. .a-canvas.fullscreen{width:100%!important;height:100%!important;top:0!important;left:0!important;right:0!important;bottom:0!important;z-index:999999!important;position:fixed!important}a-scene{display:block;position:relative;height:100%;width:100%}a-assets,a-scene audio,a-scene img,a-scene video{display:none}.a-enter-vr-modal,.a-orientation-modal{font-family:Consolas,Andale Mono,Courier New,monospace}.a-enter-vr-modal a{border-bottom:1px solid #fff;padding:2px 0;text-decoration:none;transition:.1s color ease-in}.a-enter-vr-modal a:hover{background-color:#fff;color:#111;padding:2px 4px;position:relative;left:-4px}.a-enter-vr{font-family:sans-serif,monospace;font-size:13px;width:100%;font-weight:200;line-height:16px;height:10%;position:absolute;right:20px;bottom:20px}.a-enter-vr.embedded{right:5px;bottom:5px}.a-enter-vr-button,.a-enter-vr-modal,.a-enter-vr-modal a{color:#fff}.a-enter-vr-button{background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245.82%20141.73%22%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Emask%3C%2Ftitle%3E%3Cpath%20class%3D%22a%22%20d%3D%22M175.56%2C111.37c-22.52%2C0-40.77-18.84-40.77-42.07S153%2C27.24%2C175.56%2C27.24s40.77%2C18.84%2C40.77%2C42.07S198.08%2C111.37%2C175.56%2C111.37ZM26.84%2C69.31c0-23.23%2C18.25-42.07%2C40.77-42.07s40.77%2C18.84%2C40.77%2C42.07-18.26%2C42.07-40.77%2C42.07S26.84%2C92.54%2C26.84%2C69.31ZM27.27%2C0C11.54%2C0%2C0%2C12.34%2C0%2C28.58V110.9c0%2C16.24%2C11.54%2C30.83%2C27.27%2C30.83H99.57c2.17%2C0%2C4.19-1.83%2C5.4-3.7L116.47%2C118a8%2C8%2C0%2C0%2C1%2C12.52-.18l11.51%2C20.34c1.2%2C1.86%2C3.22%2C3.61%2C5.39%2C3.61h72.29c15.74%2C0%2C27.63-14.6%2C27.63-30.83V28.58C245.82%2C12.34%2C233.93%2C0%2C218.19%2C0H27.27Z%22%2F%3E%3C%2Fsvg%3E) 50% 50%/70% 70% no-repeat rgba(0,0,0,.35);border:0;bottom:0;cursor:pointer;min-width:50px;min-height:30px;padding-right:5%;padding-top:4%;position:absolute;right:0;transition:background-color .05s ease;-webkit-transition:background-color .05s ease;z-index:9999}.a-enter-vr-button:active,.a-enter-vr-button:hover{background-color:#666}[data-a-enter-vr-no-webvr] .a-enter-vr-button{border-color:#666;opacity:.65}[data-a-enter-vr-no-webvr] .a-enter-vr-button:active,[data-a-enter-vr-no-webvr] .a-enter-vr-button:hover{background-color:rgba(0,0,0,.35);cursor:not-allowed}.a-enter-vr-modal{background-color:#666;border-radius:0;display:none;min-height:32px;margin-right:70px;padding:9px;width:280px;right:2%;position:absolute}.a-enter-vr-modal:after{border-bottom:10px solid transparent;border-left:10px solid #666;border-top:10px solid transparent;display:inline-block;content:'';position:absolute;right:-5px;top:5px;width:0;height:0}.a-enter-vr-modal a,.a-enter-vr-modal p{display:inline}.a-enter-vr-modal p{margin:0}.a-enter-vr-modal p:after{content:' '}[data-a-enter-vr-no-headset].a-enter-vr:hover .a-enter-vr-modal,[data-a-enter-vr-no-webvr].a-enter-vr:hover .a-enter-vr-modal{display:block}.a-orientation-modal{background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2090%2090%22%20enable-background%3D%22new%200%200%2090%2090%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%220%2C0%200%2C0%200%2C0%20%22%3E%3C/polygon%3E%3Cg%3E%3Cpath%20d%3D%22M71.545%2C48.145h-31.98V20.743c0-2.627-2.138-4.765-4.765-4.765H18.456c-2.628%2C0-4.767%2C2.138-4.767%2C4.765v42.789%20%20%20c0%2C2.628%2C2.138%2C4.766%2C4.767%2C4.766h5.535v0.959c0%2C2.628%2C2.138%2C4.765%2C4.766%2C4.765h42.788c2.628%2C0%2C4.766-2.137%2C4.766-4.765V52.914%20%20%20C76.311%2C50.284%2C74.173%2C48.145%2C71.545%2C48.145z%20M18.455%2C16.935h16.344c2.1%2C0%2C3.808%2C1.708%2C3.808%2C3.808v27.401H37.25V22.636%20%20%20c0-0.264-0.215-0.478-0.479-0.478H16.482c-0.264%2C0-0.479%2C0.214-0.479%2C0.478v36.585c0%2C0.264%2C0.215%2C0.478%2C0.479%2C0.478h7.507v7.644%20%20%20h-5.534c-2.101%2C0-3.81-1.709-3.81-3.81V20.743C14.645%2C18.643%2C16.354%2C16.935%2C18.455%2C16.935z%20M16.96%2C23.116h19.331v25.031h-7.535%20%20%20c-2.628%2C0-4.766%2C2.139-4.766%2C4.768v5.828h-7.03V23.116z%20M71.545%2C73.064H28.757c-2.101%2C0-3.81-1.708-3.81-3.808V52.914%20%20%20c0-2.102%2C1.709-3.812%2C3.81-3.812h42.788c2.1%2C0%2C3.809%2C1.71%2C3.809%2C3.812v16.343C75.354%2C71.356%2C73.645%2C73.064%2C71.545%2C73.064z%22%3E%3C/path%3E%3Cpath%20d%3D%22M28.919%2C58.424c-1.466%2C0-2.659%2C1.193-2.659%2C2.66c0%2C1.466%2C1.193%2C2.658%2C2.659%2C2.658c1.468%2C0%2C2.662-1.192%2C2.662-2.658%20%20%20C31.581%2C59.617%2C30.387%2C58.424%2C28.919%2C58.424z%20M28.919%2C62.786c-0.939%2C0-1.703-0.764-1.703-1.702c0-0.939%2C0.764-1.704%2C1.703-1.704%20%20%20c0.94%2C0%2C1.705%2C0.765%2C1.705%2C1.704C30.623%2C62.022%2C29.858%2C62.786%2C28.919%2C62.786z%22%3E%3C/path%3E%3Cpath%20d%3D%22M69.654%2C50.461H33.069c-0.264%2C0-0.479%2C0.215-0.479%2C0.479v20.288c0%2C0.264%2C0.215%2C0.478%2C0.479%2C0.478h36.585%20%20%20c0.263%2C0%2C0.477-0.214%2C0.477-0.478V50.939C70.131%2C50.676%2C69.917%2C50.461%2C69.654%2C50.461z%20M69.174%2C51.417V70.75H33.548V51.417H69.174z%22%3E%3C/path%3E%3Cpath%20d%3D%22M45.201%2C30.296c6.651%2C0%2C12.233%2C5.351%2C12.551%2C11.977l-3.033-2.638c-0.193-0.165-0.507-0.142-0.675%2C0.048%20%20%20c-0.174%2C0.198-0.153%2C0.501%2C0.045%2C0.676l3.883%2C3.375c0.09%2C0.075%2C0.198%2C0.115%2C0.312%2C0.115c0.141%2C0%2C0.273-0.061%2C0.362-0.166%20%20%20l3.371-3.877c0.173-0.2%2C0.151-0.502-0.047-0.675c-0.194-0.166-0.508-0.144-0.676%2C0.048l-2.592%2C2.979%20%20%20c-0.18-3.417-1.629-6.605-4.099-9.001c-2.538-2.461-5.877-3.817-9.404-3.817c-0.264%2C0-0.479%2C0.215-0.479%2C0.479%20%20%20C44.72%2C30.083%2C44.936%2C30.296%2C45.201%2C30.296z%22%3E%3C/path%3E%3C/g%3E%3C/svg%3E) center/50% 50% no-repeat rgba(244,244,244,1);bottom:0;font-size:14px;font-weight:600;left:0;line-height:20px;right:0;position:fixed;top:0;z-index:9999999}.a-orientation-modal:after{color:#666;content:"Insert phone into Cardboard holder.";display:block;position:absolute;text-align:center;top:70%;transform:translateY(-70%);width:100%}.a-orientation-modal button{background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M55.209%2C50l17.803-17.803c1.416-1.416%2C1.416-3.713%2C0-5.129c-1.416-1.417-3.713-1.417-5.129%2C0L50.08%2C44.872%20%20L32.278%2C27.069c-1.416-1.417-3.714-1.417-5.129%2C0c-1.417%2C1.416-1.417%2C3.713%2C0%2C5.129L44.951%2C50L27.149%2C67.803%20%20c-1.417%2C1.416-1.417%2C3.713%2C0%2C5.129c0.708%2C0.708%2C1.636%2C1.062%2C2.564%2C1.062c0.928%2C0%2C1.856-0.354%2C2.564-1.062L50.08%2C55.13l17.803%2C17.802%20%20c0.708%2C0.708%2C1.637%2C1.062%2C2.564%2C1.062s1.856-0.354%2C2.564-1.062c1.416-1.416%2C1.416-3.713%2C0-5.129L55.209%2C50z%22%3E%3C/path%3E%3C/svg%3E) no-repeat;border:none;height:50px;text-indent:-9999px;width:50px}</style><style type="text/css" data-href="src/style/rStats.css">.rs-base{background-color:#333;border-radius:0;font:10px monospace;left:5px;line-height:1em;opacity:.85;overflow:hidden;padding:10px;position:fixed;top:5px;width:300px;z-index:10000}.rs-base div.hidden{display:none}.rs-base h1{color:#fff;cursor:pointer;font-size:1.4em;font-weight:300;margin:0 0 5px;padding:0}.rs-group{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-direction:column-reverse;flex-direction:column-reverse;margin-bottom:5px}.rs-group:last-child{margin-bottom:0}.rs-counter-base{align-items:center;display:-webkit-box;display:-webkit-flex;display:flex;height:10px;-webkit-justify-content:space-between;justify-content:space-between;margin:2px 0}.rs-counter-base.alarm{color:#b70000;text-shadow:0 0 0 #b70000,0 0 1px #fff,0 0 1px #fff,0 0 2px #fff,0 0 2px #fff,0 0 3px #fff,0 0 3px #fff,0 0 4px #fff,0 0 4px #fff}.rs-counter-id{font-weight:300;-webkit-box-ordinal-group:0;-webkit-order:0;order:0;width:54px}.rs-counter-value{font-weight:300;-webkit-box-ordinal-group:1;-webkit-order:1;order:1;text-align:right;width:35px}.rs-canvas{-webkit-box-ordinal-group:2;-webkit-order:2;order:2}@media (min-width:480px){.rs-base{left:20px;top:20px}}</style>
+    <script src="./A-Frame Presentation_files/aframe-text-component.min.js"></script>
+    <script src="./A-Frame Presentation_files/Dawning-of-a-New-Day_Regular.js"></script>
+    <script src="./A-Frame Presentation_files/Exo 2 Black_Regular.js"></script>
+    <script src="./A-Frame Presentation_files/Exo 2_Bold Italic.js"></script><script type="text/javascript" src="./A-Frame Presentation_files/marked.js"></script><script type="text/javascript" src="./A-Frame Presentation_files/markdown.js"></script><script type="text/javascript" src="./A-Frame Presentation_files/notes.js"></script><script type="text/javascript" src="./A-Frame Presentation_files/highlight.js"></script>
+  </head>
+
+  <body>
+    <div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
+      <div class="slides" style="width: 960px; height: 700px; zoom: 1.02143;">
+        <section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe.jpg" style="top: 330px; display: none;" data-background-image="media/img/aframe.jpg" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="talk-title">
+  <h1>A-Frame</h1>
+  <p>3D y Realidad Virtual para la Web</p>
+  <p class="talk-info">
+    @hugozap | hugozap@gmail.com
+    BogotaJS ( Comunidad de JavaScript de Bogotá )
+  </p>
+</div>
+
+<aside class="notes"><ul>
+<li>Onboard web developers into the 3D and VR world with easy-to-use tools</li>
+<li>Prototype WebVR experiences faster</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe.jpg" style="top: 330px; display: none;" data-background-image="media/img/aframe.jpg" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="talk-title">
+  <h1></h1>
+  <ul>
+    <li></li>
+  </ul>
+  <p class="talk-info">
+    @hugozap | hugozap@gmail.com
+    BogotaJS ( Comunidad de JavaScript de Bogotá )
+  </p>
+  <p>Manual taller: <br> <a style="color:white" href="https://github.com/hugozap/manual-taller-aframe/raw/master/Manual%20Taller%203D%20VR.pdf">https://github.com/hugozap/manual-taller-aframe</a></p>
+</div>
+
+<aside class="notes"><ul>
+<li>Onboard web developers into the 3D and VR world with easy-to-use tools</li>
+<li>Prototype WebVR experiences faster</li>
+</ul>
+</aside></section><section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="stack past"><section data-markdown="" data-markdown-parsed="true" data-background-video="media/video/virtualreality.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" style="top: 330px; display: none;"><h1 id="3d-y-realidad-virtual">3D y Realidad Virtual</h1>
+<!-- -->
+<aside class="notes"><ul>
+<li>Ask how many have tried VR.</li>
+<li>Virtual reality is a technology platform that transports you to realistic, interactive, immersive 3D environments</li>
+<li>It's the next platform, will change how we work + play + communicate digitally, face of society</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" class="future" aria-hidden="true" style="top: 330px; display: none;"><div class="image-row">
+  <div><img data-src="media/img/google-cardboard.png"></div>
+  <div><img data-src="media/img/google-daydream.png"></div>
+  <div><img data-src="media/img/samsung-gearvr.png"></div>
+</div>
+
+<div class="image-row">
+  <div><img data-src="media/img/oculus-rift.png"></div>
+  <div><img data-src="media/img/playstation-vr.png"></div>
+  <div><img data-src="media/img/htc-vive.png"></div>
+</div>
+
+<aside class="notes"><ul>
+<li>Backed by the largest corporations in the world, everyone wants in</li>
+<li>Range from cheap to expensive, tethered and untethered, controllers, tracking</li>
+<li>HTC Vive with Steam currently offers the most compelling experiences, but never know</li>
+<li>See a lot of different devices, systems, platforms competing against each other...</li>
+</ul>
+</aside></section></section><section style="top: 0px; display: none;" hidden="" aria-hidden="true" class="stack past"><section data-markdown="" data-markdown-parsed="true" style="top: 142.5px; display: none;"><h1 id="webvr">WebVR</h1>
+<p>Una plataforma de realidad virtual con las ventajas de <strong>la Web</strong></p>
+<div class="captioned-image-row">
+  <div>
+    <img src="./A-Frame Presentation_files/web-is-open.png">
+    <i>Abierta</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/web-is-connected.png">
+    <i>Conectada</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/web-is-instant.png">
+    <i>Instantánea</i>
+  </div>
+</div>
+
+<aside class="notes"><p>WebVR is...virtual reality in the browser, powered by the Internet</p>
+<p>Open:</p>
+<ul>
+<li>Anyone can publish</li>
+<li>Open source culture with open standards</li>
+</ul>
+<p>Connected:</p>
+<ul>
+<li>Traverse worlds</li>
+</ul>
+<p>Instant:</p>
+<ul>
+<li>Click a link on Twitter or Weibo, immediate VR experiences</li>
+<li>No installs</li>
+<li>Imagine for long tail experiences: shopping &amp; personal spaces</li>
+<li>Great for long tail bite-sized experiences</li>
+</ul>
+<p>Transition:</p>
+<ul>
+<li>Web has advantages that make it the best platform for the people</li>
+<li>Need to act to make it reality, can't wait for VR to bake and crystallize</li>
+<li>Get involved</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" class="future" aria-hidden="true" style="top: 330px; display: none;"><img class="stretch" src="./A-Frame Presentation_files/webvr.png" style="height: 700px; width: 720.875px;">
+<p>Browser APIs that enable WebGL rendering to headsets and access to VR
+sensors</p>
+<p><a href="https://w3c.github.io/webvr/">https://w3c.github.io/webvr/</a></p>
+<aside class="notes"><p>API:</p>
+<ul>
+<li>Optimized rendering path to headsets</li>
+<li>Access position and rotation (pose) data</li>
+</ul>
+<p>History:</p>
+<ul>
+<li>Initial WebVR API by Mozilla</li>
+<li>Working W3C community group</li>
+<li>Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.0 API</li>
+</ul>
+<p>Not just a specification, it's implemented...</p>
+</aside></section><section data-markdown="" data-markdown-parsed="true" class="future" aria-hidden="true" style="top: 330px; display: none;"><p><a href="https://webvr.rocks/">https://webvr.rocks</a></p>
+<div class="captioned-image-row small">
+  <div>
+    <img src="./A-Frame Presentation_files/firefox-nightly.png">
+    <i>Firefox Nightly</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/edge.jpg">
+    <i>Microsoft Edge</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/chromium.png">
+    <i>Chromium</i>
+  </div>
+</div>
+
+<div class="captioned-image-row small">
+  <div>
+    <img src="./A-Frame Presentation_files/chrome.jpg">
+    <i>Chrome for Android</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/carmel.jpg">
+    <i>Oculus Carmel</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/samsung-browser.png">
+    <i>Samsung Internet</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/google-cardboard.png">
+    <i>Mobile Polyfill</i>
+  </div>
+</div>
+
+<aside class="notes"><ul>
+<li>Firefox + Chrome WebVR 1.0 hits release channels by early 2017</li>
+<li>Currently behind Nightly, custom builds, and flags</li>
+<li>Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones</li>
+<li>With all the browsers behind it...</li>
+</ul>
+</aside></section></section><section style="top: 0px; display: block;" hidden="" aria-hidden="true" class="stack past"><section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe-rendered-full.png" style="top: 222.5px; display: block;" data-background-image="media/img/aframe-rendered-full.png"><h1 id="a-frame">A-Frame</h1>
+<!-- -->
+<p>Framework Web para construir experiencias 3D y VR</p>
+<aside class="notes"><ul>
+<li>Launched last December</li>
+<li>Why:<ul>
+<li>Easy for web developers to create VR content, without graphics knowledge</li>
+<li>Prototype and experiment WebVR and VR UX faster</li>
+<li>Vehicle to kickstart WebVR ecosystem</li>
+</ul>
+</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe.jpg" data-transition="slide-in none" class="future" aria-hidden="true" style="top: 0px; display: none;" data-background-image="media/img/aframe.jpg"><h2 id="hello-world">Hello World</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+
+
+
+
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<!-- -->
+<aside class="notes"><ul>
+<li>Just HTML</li>
+<li>Drop a script tag, no build steps</li>
+<li>Using Custom HTML Elements</li>
+<li>One line of HTML <code>&lt;a-scene&gt;</code> handles<ul>
+<li>canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect</li>
+</ul>
+</li>
+<li>Put stuff inside our scene...</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe.jpg" data-transition="fade-in slide-out" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/aframe.jpg"><h2 id="hello-world">Hello World</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#4CC3D9"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 0.5 -3"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"0 45 0"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-cylinder</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#FFC65D"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"1 0.75 -3"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"0.5"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1.5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-cylinder</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#EF2D5E"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 1.25 -5"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"1.25"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-plane</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#7BC8A4"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 0 -4"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"-90 0 0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-plane</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a-sky</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#ECECEC"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sky</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<!-- -->
+<aside class="notes"><ul>
+<li>Basic 3D primitives with Custom Elements</li>
+<li>Readable: HTML arguably most accessible language in computing</li>
+<li>Encapsulated: copy-and-paste HTML anywhere else and still work, no state or variables</li>
+<li>Quickly look at a live example...</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/metaverse.jpg" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/metaverse.jpg"><h2 id="hello-metaverse">Hello Metaverse</h2>
+<p><i>by Ada Rose Edwards (@lady_ada_king)</i></p>
+<!-- -->
+<div class="stretch" data-aframe-scene="scenes/80s.html" style="height: 700px; width: 960px;"></div>
+
+<aside class="notes"><ul>
+<li>A-Frame scene by Ada Rose Edwards running from inside my HTML slides</li>
+<li>Works on desktop, Android, iOS, Samsung Gear VR, Oculus Rift, HTC Vive</li>
+<li>Could open up the DOM Inspector to change values live</li>
+<li>Since it's just HTML...</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/aframe.jpg" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/aframe.jpg"><!-- -->
+<h2 id="funciona-con-todos-los-frameworks-web">Funciona con todos los frameworks Web</h2>
+<div class="captioned-image-row">
+  <div>
+    <img src="./A-Frame Presentation_files/d3.png">
+    <i>d3.js</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/vue.png">
+    <i>Vue.js</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/react.png">
+    <i>React</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/redux.png">
+    <i>Redux</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/jquery.png">
+    <i>jQuery</i>
+  </div>
+  <div>
+    <img src="./A-Frame Presentation_files/angular.png">
+    <i>Angular</i>
+  </div>
+</div>
+
+<aside class="notes"><ul>
+<li>Based on HTML, compatible with all existing libraries/frameworks</li>
+<li>Good reason to have HTML as an intermediary layer between WebGL/three.js</li>
+<li>All tools were on top of the notion of HTML</li>
+<li>Under the hood, A-Frame is an extensible, declarative framework for three.js...</li>
+</ul>
+</aside></section></section><section style="top: 0px; display: block;" class="stack past" data-previous-indexv="0" hidden="" aria-hidden="true"><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" style="top: 214px; display: block;" data-background-image="media/img/minecraft-blocks.png" class="" aria-hidden="true"><h1 id="sistema-de-componentes-y-entidades">Sistema de componentes y entidades</h1>
+<!-- -->
+<aside class="notes"><ul>
+<li>Is an entity-component framework</li>
+<li>Popular in game development, used by Unity</li>
+<li>All objects in scene are <strong>entities</strong> that inherently empty objects. Plug in
+<strong>components</strong> to attach appearance / behavior / functionality</li>
+<li>2D web where every element was fixed</li>
+<li>3D/VR is different, objects of infinite types and complexities, need an easy way to build up different kinds of objects</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" class="future" aria-hidden="true" style="top: 0px; display: block;" data-background-image="media/img/minecraft-blocks.png" hidden=""><!-- -->
+<h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<pre class="stretch" style="height: 475px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>&gt;</span>
+</code></pre>
+<!-- -->
+<aside class="notes"><ul>
+<li>Start with an <code>&lt;a-entity&gt;</code></li>
+<li>By itself, has no appearance, behavior, functionality</li>
+<li>Plug in components to add appearance, behavior, functionality</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="none" class="future" aria-hidden="true" style="top: 0px; display: none;" data-background-image="media/img/minecraft-blocks.png" hidden=""><h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>
+  <span class="hljs-attr">geometry</span>=<span class="hljs-string">"primitive: sphere; radius: 1.5"</span>
+  <span class="hljs-attr">material</span>=<span class="hljs-string">"color: #343434; roughness: 0.4; sphericalEnvMap: #texture"</span>&gt;</span>
+</code></pre>
+<!-- -->
+<aside class="notes"><ul>
+<li>Syntax similar to CSS styles</li>
+<li>Component names as HTML attributes</li>
+<li>Component properties and values as HTML attribute value</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="none" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/minecraft-blocks.png" hidden=""><h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>
+  <span class="hljs-attr">geometry</span>=<span class="hljs-string">"primitive: sphere; radius: 1.5"</span>
+  <span class="hljs-attr">material</span>=<span class="hljs-string">"color: #343434; roughness: 0.4; sphericalEnvMap: #texture"</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 2 4"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"45 0 90"</span> <span class="hljs-attr">scale</span>=<span class="hljs-string">"2 2 2"</span>&gt;</span>
+</code></pre>
+<!-- -->
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="none" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/minecraft-blocks.png" hidden=""><h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>
+  <span class="hljs-attr">geometry</span>=<span class="hljs-string">"primitive: sphere; radius: 1.5"</span>
+  <span class="hljs-attr">material</span>=<span class="hljs-string">"color: #343434; roughness: 0.4; sphericalEnvMap: #texture"</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 2 4"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"45 0 90"</span> <span class="hljs-attr">scale</span>=<span class="hljs-string">"2 2 2"</span>
+  <span class="hljs-attr">animation</span>=<span class="hljs-string">"property: rotation; loop: true; to: 0 360 0"</span>
+  <span class="hljs-attr">movement-pattern</span>=<span class="hljs-string">"type: spline; speed: 4"</span>&gt;</span>
+</code></pre>
+<!-- -->
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="none" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/minecraft-blocks.png" hidden=""><h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>
+  <span class="hljs-attr">json-model</span>=<span class="hljs-string">"src: #robot"</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 2 4"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"45 0 90"</span> <span class="hljs-attr">scale</span>=<span class="hljs-string">"2 2 2"</span>
+  <span class="hljs-attr">animation</span>=<span class="hljs-string">"property: rotation; loop: true; to: 0 360 0"</span>
+  <span class="hljs-attr">movement-pattern</span>=<span class="hljs-string">"type: spline; speed: 4"</span>&gt;</span>
+</code></pre>
+<!-- -->
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/minecraft-blocks.png" data-transition="none" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/minecraft-blocks.png" hidden=""><h2 id="agregando-capacidades-a-una-entidad">Agregando capacidades a una entidad</h2>
+<!-- -->
+<pre class="stretch" style="height: 700px; width: 960px;"><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span>
+  <span class="hljs-attr">json-model</span>=<span class="hljs-string">"src: #robot"</span>
+  <span class="hljs-attr">position</span>=<span class="hljs-string">"-1 2 4"</span> <span class="hljs-attr">rotation</span>=<span class="hljs-string">"45 0 90"</span> <span class="hljs-attr">scale</span>=<span class="hljs-string">"2 2 2"</span>
+  <span class="hljs-attr">animation</span>=<span class="hljs-string">"property: rotation; loop: true; to: 0 360 0"</span>
+  <span class="hljs-attr">movement-pattern</span>=<span class="hljs-string">"type: attack; target: #player"</span>
+  <span class="hljs-attr">explode</span>=<span class="hljs-string">"on: hit"</span>&gt;</span>
+</code></pre>
+<!-- -->
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/standard-components.png" data-background-size="contain" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/standard-components.png" hidden=""><!-- -->
+<aside class="notes"><ul>
+<li>These are some components that ship with A-Frame</li>
+<li>A-Frame is fully extensible at its core so...</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/community-components.png" data-background-size="contain" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/community-components.png" hidden=""><!-- -->
+<aside class="notes"><ul>
+<li>Community has filled the ecosystem with tons of components</li>
+<li>Components can do whatever they want, have full access to three.js and Web APIs</li>
+<li>The component ecosystem the lifeblood of A-Frame</li>
+<li>Physics, leap motion, particle systems, audio visualizations, oceans</li>
+<li>Drop these components as script tags and use them straight from HTML</li>
+<li>Advanced developers empowering other developers</li>
+<li>Working on collecting these components...</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background-color="#333" class="has-dark-background future" aria-hidden="true" style="top: 330px; display: none;" hidden=""><h1 id="registro">Registro</h1>
+<!-- -->
+<p>Colección de componentes</p>
+<p><a class="stretch" href="https://aframe.io/aframe-registry">
+  <video loop="" data-autoplay="" src="media/video/registrypreview.mp4"></video>
+</a></p>
+<aside class="notes"><ul>
+<li>Collecting them into the A-Frame registry</li>
+<li>Like a store of components that we make sure work well</li>
+<li>People can browse and search for components or install them....</li>
+</ul>
+</aside></section><section data-markdown="" data-markdown-parsed="true" data-background-color="#333" class="has-dark-background future" aria-hidden="true" style="top: 330px; display: none;" hidden=""><h1 id="registro">Registro</h1>
+<!-- -->
+<p>Colección de componentes</p>
+<video loop="" data-autoplay="" src="media/video/leaphands.mp4"></video>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/inspector.png" data-state="state--bg-dark" class="future" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/inspector.png" hidden=""><h2 id="inspector">Inspector</h2>
+<!-- -->
+<p>Herramienta visual para analizar escenas de A-Frame.  <code>&lt;ctrl&gt;+&lt;alt&gt;+i</code>.</p>
+<div class="stretch" data-aframe-scene="scenes/80s.html" style="height: 700px; width: 960px;"></div>
+</section></section><section style="top: 0px; display: block;" class="stack present" data-previous-indexv="10"><section data-markdown="" data-markdown-parsed="true" data-background="media/img/header.png" style="top: 330px; display: none;" data-background-image="media/img/header.png" hidden="" aria-hidden="true" class="past"><!-- -->
+<h1 id="comunidad">Comunidad</h1>
+<p><a href="https://aframe.io/blog/">https://aframe.io/blog/</a></p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/apainter.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/apainter.gif" hidden=""><!-- -->
+<h1 id="arte-a-painter-">Arte - <em>A-Painter</em></h1>
+<p>@mozillavr</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/syria.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/syria.gif" hidden=""><!-- -->
+<h1 id="periodismo-fear-of-the-sky-">Periodismo - <em>Fear of the Sky</em></h1>
+<p>Amnesty International UK</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/mars.jpg" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/mars.jpg" hidden=""><!-- -->
+<h1 id="periodismo-viaje-a-marte-">Periodismo - <em>Viaje a Marte</em></h1>
+<p>The Washington Post</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/citybuilder.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/citybuilder.gif" hidden=""><!-- -->
+<h1 id="sandbox-construyendo-ciudades-">Sandbox - <em>Construyendo Ciudades</em></h1>
+<p>@kfarr</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/adit.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/adit.gif" hidden=""><!-- -->
+<h1 id="visualizaci-n-de-datos-adit-">Visualización de datos - <em>Adit</em></h1>
+<p>@datatitian</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/a-blast.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/a-blast.gif" hidden=""><!-- -->
+<h1 id="juegos-a-blast-">Juegos - <em>A-Blast</em></h1>
+<p>@mozillavr</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/ux.gif" class="past" aria-hidden="true" style="top: 330px; display: none;" data-background-image="media/img/ux.gif" hidden=""><!-- -->
+<h1 id="experimento-nuevas-interfaces-">Experimento - <em>Nuevas Interfaces</em></h1>
+<p>@whoyee</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/math.gif" class="past" aria-hidden="true" style="top: 222.5px; display: block;" data-background-image="media/img/math.gif" hidden=""><!-- -->
+<h1 id="mathematics-mathworldvr-">Mathematics - <em>MathworldVR</em></h1>
+<p>@sleighdogs</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/ar.gif" class="past" aria-hidden="true" style="top: 179px; display: block;" data-background-image="media/img/ar.gif" hidden=""><!-- -->
+<h1 id="realidad-aumentada-ar-js-a-frame-">Realidad Aumentada - <em>AR.js + A-Frame</em></h1>
+<p>@jerome_etienne</p>
+</section><section data-markdown="" data-markdown-parsed="true" data-background="media/img/cadavr.gif" class="present" style="top: 222.5px; display: block;" data-background-image="media/img/cadavr.gif"><!-- -->
+<h1 id="educaci-n-cadavr-">Educación - <em>CadaVR</em></h1>
+<p>@drryanjames</p>
+</section><section data-markdown="" data-markdown-parsed="true" class="future" aria-hidden="true" style="top: 310.5px; display: block;" hidden=""></section></section>
+      </div>
+    <div class="backgrounds"><div class="slide-background past" data-background-hash="media/img/aframe.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/aframe.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background stack past" style="display: none;"><div class="slide-background past" data-background-hash="0media/video/virtualreality.mp4nullnullnullnullnull" style="display: none;"></div><div class="slide-background past" style="display: none;"></div></div><div class="slide-background stack past" style="display: none;" data-loaded="true"><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;"></div><div class="slide-background past" style="display: none;"></div></div><div class="slide-background stack past" data-loaded="true" style="display: block;"><div class="slide-background past" data-background-hash="media/img/aframe-rendered-full.pngnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/aframe-rendered-full.png&quot;);"></div><div class="slide-background past" data-background-hash="media/img/aframe.jpgnullnullnullnullnullnullnullnull" style="display: none; background-image: url(&quot;media/img/aframe.jpg&quot;);" data-loaded="true"></div><div class="slide-background past" data-background-hash="media/img/aframe.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/metaverse.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/aframe.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div></div><div class="slide-background stack past" data-loaded="true" style="display: block;"><div class="slide-background present" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/minecraft-blocks.png&quot;);"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/minecraft-blocks.png&quot;);"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" style="display: none; background-image: url(&quot;media/img/minecraft-blocks.png&quot;);" data-loaded="true"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background future" data-background-hash="media/img/minecraft-blocks.pngnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background future" data-background-hash="media/img/standard-components.pngcontainnullnullnullnullnullnullnull" style="background-size: contain; display: none;"></div><div class="slide-background future" data-background-hash="media/img/community-components.pngcontainnullnullnullnullnullnullnull" style="background-size: contain; display: none;"></div><div class="slide-background future" data-background-hash="0#333nullnullnull" style="background-color: rgb(51, 51, 51); display: none;"></div><div class="slide-background future" data-background-hash="0#333nullnullnull" style="background-color: rgb(51, 51, 51); display: none;"></div><div class="slide-background future" data-background-hash="media/img/inspector.pngnullnullnullnullnullnullnullnull" style="display: none;"></div></div><div class="slide-background stack present" data-loaded="true" style="display: block;"><div class="slide-background past" data-background-hash="media/img/header.pngnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/apainter.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/syria.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/mars.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/citybuilder.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/adit.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/a-blast.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/ux.gifnullnullnullnullnullnullnullnull" style="display: none;"></div><div class="slide-background past" data-background-hash="media/img/math.gifnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/math.gif&quot;);"></div><div class="slide-background past" data-background-hash="media/img/ar.gifnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/ar.gif&quot;);"></div><div class="slide-background present" data-background-hash="media/img/cadavr.gifnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(&quot;media/img/cadavr.gif&quot;);"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div></div></div><div class="progress" style="display: block;"><span style="width: 1198.74px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right" aria-label="next slide"></button><button class="navigate-up enabled" aria-label="above slide"></button><button class="navigate-down enabled" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+Educación - CadaVR
+@drryanjames
+</div></div>
+    <script src="./A-Frame Presentation_files/head.min.js"></script>
+    <script src="./A-Frame Presentation_files/reveal.js"></script>
+    <script src="./A-Frame Presentation_files/main.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>
